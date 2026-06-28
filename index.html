@@ -5,96 +5,296 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Alex James | Frontend Developer</title>
-  <meta content="Professional portfolio of Alex James, React and frontend developer." name="description">
-  <meta content="Alex James, React Developer, Frontend Developer, Portfolio" name="keywords">
+  <title>Alex James — Frontend Developer</title>
+  <meta content="Portfolio of Alex James — React &amp; frontend developer building fast, accessible, user-focused web experiences." name="description">
+  <meta content="Alex James, React Developer, Frontend Developer, Portfolio, JavaScript, TypeScript" name="keywords">
+  <meta name="author" content="Alex James">
+  <meta name="theme-color" content="#0b0f1a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alex James — Frontend Developer">
+  <meta property="og:description" content="React &amp; frontend developer building fast, accessible, user-focused web experiences.">
+  <meta property="og:type" content="website">
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700|Raleway:400,500,600,700,800|Poppins:300,400,500,600,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ===== Navbar ===== -->
+  <header id="navbar" class="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand scrollto">
+        <span class="brand-mark">AJ</span>
+        <span class="brand-text">Alex James</span>
+      </a>
 
-  <header id="header">
-    <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/profile-img.jpeg" alt="Alex James" class="img-fluid rounded-circle">
-        <h1><a href="index.html">Alex James</a></h1>
-        <p class="profile-role">Frontend Developer</p>
-        <div class="social-links text-center">
-          <a href="https://twitter.com/ALEX__JAMES006" class="twitter" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100006404269310" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/njan_konnikaran/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/alexjames2000/" class="linkedin" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-briefcase-alt-2"></i> <span>Experience</span></a></li>
-          <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-layer"></i> <span>Projects</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero" class="scrollto active">Home</a>
+        <a href="#about" class="scrollto">About</a>
+        <a href="#skills" class="scrollto">Skills</a>
+        <a href="#experience" class="scrollto">Experience</a>
+        <a href="#certifications" class="scrollto">Certifications</a>
+        <a href="#projects" class="scrollto">Projects</a>
+        <a href="#contact" class="scrollto">Contact</a>
       </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary scrollto d-desktop">Let's talk</a>
+        <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
     </div>
   </header>
 
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container hero-container" data-aos="fade-up">
-      <span class="hero-kicker">Available for frontend roles</span>
-      <h1>Building modern web experiences that perform and scale.</h1>
-      <p>I’m Alex James, a <span class="typed" data-typed-items="React Developer,Frontend Engineer,UI-focused Problem Solver"></span></p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-hero btn-primary scrollto">View Projects</a>
-        <a href="#contact" class="btn-hero btn-outline scrollto">Contact Me</a>
+  <!-- ===== Hero ===== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="grid-overlay"></span>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <span class="pill"><span class="dot"></span> Available for frontend roles</span>
+        <h1 class="hero-title">
+          Building modern web experiences that
+          <span class="grad-text">perform&nbsp;and&nbsp;scale.</span>
+        </h1>
+        <p class="hero-sub">
+          Hi, I'm Alex James — a <span class="typed" data-typed-items="React Developer.,Frontend Engineer.,UI Problem Solver."></span>
+        </p>
+        <p class="hero-lead">
+          I turn product requirements into clean, responsive, accessible interfaces using
+          React, TypeScript, and modern frontend tooling.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary scrollto"><i class="bi bi-grid-1x2"></i> View Projects</a>
+          <a href="#contact" class="btn btn-ghost scrollto"><i class="bi bi-send"></i> Contact Me</a>
+        </div>
+
+        <div class="hero-social">
+          <a href="https://www.linkedin.com/in/alexjames2000/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://twitter.com/ALEX__JAMES006" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/njan_konnikaran/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100006404269310" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal" data-reveal-delay="120">
+        <div class="avatar-wrap">
+          <img src="assets/img/profile-img.jpeg" alt="Portrait of Alex James" class="avatar">
+          <span class="avatar-ring" aria-hidden="true"></span>
+        </div>
+        <h3 class="hero-card-name">Alex James</h3>
+        <p class="hero-card-role">Frontend Developer</p>
+        <ul class="hero-card-meta">
+          <li><i class="bi bi-geo-alt"></i> Bengaluru, India</li>
+          <li><i class="bi bi-clock"></i> IST · GMT +5:30</li>
+          <li><i class="bi bi-lightning-charge"></i> React · TypeScript</li>
+        </ul>
+        <div class="hero-card-badges">
+          <span>2+ yrs</span>
+          <span>Open to work</span>
+        </div>
       </div>
     </div>
+
+    <a href="#about" class="scroll-cue scrollto" aria-label="Scroll to content">
+      <span class="mouse"></span>
+    </a>
   </section>
 
-  <main id="main">
-    <section id="about" class="about section-padding">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I build clean, responsive, and user-focused interfaces using React, JavaScript, and modern frontend tools. I enjoy turning business requirements into intuitive product experiences with maintainable code.</p>
+  <main>
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">01 — About</span>
+          <h2>Frontend developer focused on clean, scalable UI</h2>
         </div>
 
-        <div class="row g-4">
-          <div class="col-lg-8">
-            <div class="card-panel">
-              <h3>Professional Summary</h3>
-              <p>Frontend developer with hands-on experience delivering production-ready web applications. Strong in component architecture, API integration, performance optimization, and cross-device responsive development.</p>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I build production-ready web applications with a strong emphasis on component
+              architecture, performance, and maintainable code. My day-to-day is turning
+              business requirements into intuitive, user-focused product experiences.
+            </p>
+            <p>
+              I care about the details that make interfaces feel right — responsive layouts,
+              accessible interactions, fast load times, and clean handoffs between design,
+              backend, and QA.
+            </p>
+            <div class="about-tags">
+              <span>Component Architecture</span>
+              <span>API Integration</span>
+              <span>Performance</span>
+              <span>Responsive Design</span>
+            </div>
+            <a href="#contact" class="btn btn-primary scrollto"><i class="bi bi-chat-dots"></i> Work with me</a>
+          </div>
+
+          <div class="stats reveal" data-reveal-delay="120">
+            <div class="stat">
+              <span class="stat-num" data-since="2023-11-15" data-suffix="+">0</span>
+              <span class="stat-label">Years experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="20" data-suffix="+">0</span>
+              <span class="stat-label">Features shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="15" data-suffix="+">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-count="100" data-suffix="%">0</span>
+              <span class="stat-label">Ownership mindset</span>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card-panel stats-panel">
-              <div class="stat-item">
-                <h4>2+ Years</h4>
-                <p>Industry Experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 — Skills</span>
+          <h2>The toolkit I build with</h2>
+          <p class="section-lead">Technologies and practices I rely on to ship reliable frontend applications.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+            <h3>Frontend Engineering</h3>
+            <p>Responsive, scalable interfaces built on modern component architecture.</p>
+            <div class="tags">
+              <span>React</span><span>JavaScript</span><span>TypeScript</span><span>HTML5</span><span>CSS3</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" data-reveal-delay="100">
+            <div class="skill-icon"><i class="bi bi-palette"></i></div>
+            <h3>UI &amp; Design Systems</h3>
+            <p>Translating design into consistent, reusable UI patterns and components.</p>
+            <div class="tags">
+              <span>Design Systems</span><span>Responsive</span><span>Component Libraries</span><span>Accessibility</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal" data-reveal-delay="200">
+            <div class="skill-icon"><i class="bi bi-boxes"></i></div>
+            <h3>Product Delivery</h3>
+            <p>Collaborating across teams to ship stable features and improve UX.</p>
+            <div class="tags">
+              <span>REST APIs</span><span>Git Workflow</span><span>Performance Tuning</span><span>Debugging</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="skill-bars reveal">
+          <div class="bar">
+            <div class="bar-label"><span>React &amp; JavaScript</span><span>90%</span></div>
+            <div class="track"><span class="fill" data-width="90"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar-label"><span>HTML &amp; CSS</span><span>92%</span></div>
+            <div class="track"><span class="fill" data-width="92"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar-label"><span>TypeScript</span><span>78%</span></div>
+            <div class="track"><span class="fill" data-width="78"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar-label"><span>API Integration</span><span>85%</span></div>
+            <div class="track"><span class="fill" data-width="85"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience & Education ===== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">03 — Journey</span>
+          <h2>Experience &amp; education</h2>
+        </div>
+
+        <div class="timeline-grid">
+          <div class="timeline-col reveal">
+            <h3 class="timeline-heading"><i class="bi bi-briefcase"></i> Experience</h3>
+            <div class="timeline">
+              <div class="t-item">
+                <span class="t-date">Nov 2023 — Present</span>
+                <h4>Software Engineer</h4>
+                <p class="t-org">Enhancio · Full-time</p>
+                <p class="t-loc"><i class="bi bi-geo-alt"></i> Bengaluru, Karnataka · On-site</p>
+                <p>Passionate software engineer specializing in frontend development, focused on building intuitive, scalable, and high-performance user interfaces.</p>
+                <div class="tags sm"><span>React.js</span><span>TypeScript</span><span>+15 skills</span></div>
               </div>
-              <div class="stat-item">
-                <h4>20+ Features</h4>
-                <p>Shipped to Production</p>
+
+              <div class="t-item">
+                <span class="t-date">Oct 2021 — Jul 2023 · 1 yr 10 mos</span>
+                <h4>Student Placement Co-Ordinator</h4>
+                <p class="t-org">Saintgits College of Engineering · Full-time</p>
+                <p class="t-loc"><i class="bi bi-geo-alt"></i> Kottayam, Kerala · On-site</p>
+                <p>Coordinated placement activities for the Department of Computer Applications, liaising between students and recruiters.</p>
+                <div class="tags sm"><span>Leadership</span><span>Group Discussions</span><span>+5 skills</span></div>
               </div>
-              <div class="stat-item">
-                <h4>Bengaluru</h4>
-                <p>Based in India</p>
+
+              <div class="t-item">
+                <span class="t-date">Jul 2022 — May 2023 · 11 mos</span>
+                <h4>Web / App Developer</h4>
+                <p class="t-org">Saintgits IEDC · Full-time</p>
+                <p class="t-loc"><i class="bi bi-geo-alt"></i> Kottayam, Kerala · On-site</p>
+                <div class="tags sm"><span>Material UI</span><span>Google Fonts</span><span>+5 skills</span></div>
+              </div>
+
+              <div class="t-item">
+                <span class="t-date">Nov 2021 — Jun 2022 · 8 mos</span>
+                <h4>Creative Team Member</h4>
+                <p class="t-org">Saintgits IEDC · Full-time</p>
+                <p class="t-loc"><i class="bi bi-geo-alt"></i> Kottayam, Kerala · On-site</p>
+                <div class="tags sm"><span>Canva</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-col reveal" data-reveal-delay="120">
+            <h3 class="timeline-heading"><i class="bi bi-mortarboard"></i> Education</h3>
+            <div class="timeline">
+              <div class="t-item">
+                <span class="t-date">2021 — 2023</span>
+                <h4>Master of Computer Applications (MCA)</h4>
+                <p class="t-org">Saintgits College of Engineering, Kottayam</p>
+              </div>
+              <div class="t-item">
+                <span class="t-date">2018 — 2021</span>
+                <h4>Bachelor of Computer Applications (BCA)</h4>
+                <p class="t-org">St. Thomas College, Konni</p>
+              </div>
+              <div class="t-item">
+                <span class="t-date">2016 — 2018</span>
+                <h4>Higher Secondary</h4>
+                <p class="t-org">Mary Matha Public School &amp; Junior College</p>
               </div>
             </div>
           </div>
@@ -102,257 +302,334 @@
       </div>
     </section>
 
-    <section id="skills" class="skills section-padding section-bg">
+    <!-- ===== Certifications ===== -->
+    <section id="certifications" class="section section-alt">
       <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Core Skills</h2>
-          <p>Technologies and tools I use to deliver reliable frontend applications.</p>
+        <div class="section-head reveal">
+          <span class="eyebrow">04 — Credentials</span>
+          <h2>Licenses &amp; certifications</h2>
+          <p class="section-lead">15 credentials spanning frontend, AI, cloud, and data — and still counting.</p>
         </div>
 
-        <div class="row g-4 skills-content">
-          <div class="col-lg-7" data-aos="fade-up">
-            <div class="skills-grid">
-              <article class="skills-card">
-                <h3>Frontend Engineering</h3>
-                <p>Building responsive and scalable interfaces using modern component architecture.</p>
-                <div class="skill-tags">
-                  <span>React</span>
-                  <span>JavaScript</span>
-                  <span>TypeScript</span>
-                  <span>HTML5</span>
-                  <span>CSS3</span>
-                </div>
-              </article>
+        <div class="cert-grid">
+          <article class="cert reveal">
+            <div class="cert-top"><span class="cert-logo">E</span><span class="cert-date">May 2026</span></div>
+            <h3 class="cert-name">Claude AI and Prompting for Everyone</h3>
+            <p class="cert-issuer">Edureka</p>
+            <div class="cert-foot"><span class="cert-id">ID · N1E9G15UQKI3</span></div>
+          </article>
 
-              <article class="skills-card">
-                <h3>UI & Design Systems</h3>
-                <p>Translating design into consistent UI patterns and reusable frontend components.</p>
-                <div class="skill-tags">
-                  <span>Bootstrap</span>
-                  <span>Responsive Design</span>
-                  <span>Component Libraries</span>
-                  <span>Accessibility Basics</span>
-                </div>
-              </article>
+          <article class="cert reveal" data-reveal-delay="60">
+            <div class="cert-top"><span class="cert-logo">A</span><span class="cert-date">Mar 2026</span></div>
+            <h3 class="cert-name">Claude Code in Action</h3>
+            <p class="cert-issuer">Anthropic</p>
+            <div class="cert-foot"><span class="cert-id">ID · JFUC05K49TUC</span></div>
+          </article>
 
-              <article class="skills-card">
-                <h3>Product Delivery</h3>
-                <p>Collaborating across teams to ship stable features and improve user experience.</p>
-                <div class="skill-tags">
-                  <span>REST APIs</span>
-                  <span>Git Workflow</span>
-                  <span>Performance Tuning</span>
-                  <span>Debugging</span>
-                </div>
-              </article>
+          <article class="cert reveal" data-reveal-delay="120">
+            <div class="cert-top"><span class="cert-logo">M</span><span class="cert-date">Jul 2024</span></div>
+            <h3 class="cert-name">Advanced React</h3>
+            <p class="cert-issuer">Meta</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · D3QHEGCDKZZL</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/D3QHEGCDKZZL" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
             </div>
-          </div>
+          </article>
 
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <div class="skills-summary-card">
-              <h3>What I Bring</h3>
+          <article class="cert reveal">
+            <div class="cert-top"><span class="cert-logo">C</span><span class="cert-date">Jul 2024</span></div>
+            <h3 class="cert-name">TypeScript Variables &amp; Data Types</h3>
+            <p class="cert-issuer">Coursera Project Network</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · XNRCZAQXSFR5</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/XNRCZAQXSFR5" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="cert reveal" data-reveal-delay="60">
+            <div class="cert-top"><span class="cert-logo">C</span><span class="cert-date">Jul 2024</span></div>
+            <h3 class="cert-name">Modern JavaScript: ES6 Basics</h3>
+            <p class="cert-issuer">Coursera Project Network</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · 79GN9HSC8KFG</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/79GN9HSC8KFG" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="cert reveal" data-reveal-delay="120">
+            <div class="cert-top"><span class="cert-logo">C</span><span class="cert-date">Jul 2024</span></div>
+            <h3 class="cert-name">AWS S3 Basics</h3>
+            <p class="cert-issuer">Coursera Project Network</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · SNGCQQHFS8RM</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/SNGCQQHFS8RM" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="cert reveal">
+            <div class="cert-top"><span class="cert-logo">a</span><span class="cert-date">Sep 2023</span></div>
+            <h3 class="cert-name">Getting Started with DevOps on AWS</h3>
+            <p class="cert-issuer">Amazon</p>
+          </article>
+
+          <article class="cert reveal" data-reveal-delay="60">
+            <div class="cert-top"><span class="cert-logo">D</span><span class="cert-date">Jul 2023</span></div>
+            <h3 class="cert-name">Supervised Machine Learning: Regression &amp; Classification</h3>
+            <p class="cert-issuer">DeepLearning.AI</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · C5R3NV8RP52M</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/C5R3NV8RP52M" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="cert reveal" data-reveal-delay="120">
+            <div class="cert-top"><span class="cert-logo">N</span><span class="cert-date">Nov 2022</span></div>
+            <h3 class="cert-name">Fundamentals of Deep Learning</h3>
+            <p class="cert-issuer">NVIDIA</p>
+            <div class="cert-foot"><span class="cert-id">ID · e6bb20097…fe2a3c0</span></div>
+          </article>
+
+          <article class="cert reveal">
+            <div class="cert-top"><span class="cert-logo">G</span><span class="cert-date">Apr 2022</span></div>
+            <h3 class="cert-name">Analyze Data to Answer Questions</h3>
+            <p class="cert-issuer">Google</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · DZ7XTQWALA3Q</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/DZ7XTQWALA3Q" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="cert reveal" data-reveal-delay="60">
+            <div class="cert-top"><span class="cert-logo">U</span><span class="cert-date">Jan 2022</span></div>
+            <h3 class="cert-name">Innovation for Entrepreneurs: From Idea to Marketplace</h3>
+            <p class="cert-issuer">University of Maryland</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · NGYEYQMLJEET</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/NGYEYQMLJEET" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="cert reveal" data-reveal-delay="120">
+            <div class="cert-top"><span class="cert-logo">G</span><span class="cert-date">Dec 2021</span></div>
+            <h3 class="cert-name">Process Data from Dirty to Clean</h3>
+            <p class="cert-issuer">Google</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · 933TD6CUK4H4</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/933TD6CUK4H4" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="cert reveal">
+            <div class="cert-top"><span class="cert-logo">G</span><span class="cert-date">Dec 2021</span></div>
+            <h3 class="cert-name">Prepare Data for Exploration</h3>
+            <p class="cert-issuer">Google</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · PRKXCYTLAZ62</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/PRKXCYTLAZ62" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="cert reveal" data-reveal-delay="60">
+            <div class="cert-top"><span class="cert-logo">G</span><span class="cert-date">Dec 2021</span></div>
+            <h3 class="cert-name">Ask Questions to Make Data-Driven Decisions</h3>
+            <p class="cert-issuer">Google</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · JWUVLPK5E3FL</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/JWUVLPK5E3FL" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="cert reveal" data-reveal-delay="120">
+            <div class="cert-top"><span class="cert-logo">G</span><span class="cert-date">Nov 2021</span></div>
+            <h3 class="cert-name">Foundations: Data, Data, Everywhere</h3>
+            <p class="cert-issuer">Google</p>
+            <div class="cert-foot">
+              <span class="cert-id">ID · CGYKQYF9RDLH</span>
+              <a class="cert-verify" href="https://www.coursera.org/verify/CGYKQYF9RDLH" target="_blank" rel="noopener noreferrer">Verify <i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">05 — Work</span>
+          <h2>Selected work</h2>
+          <p class="section-lead">A snapshot of the kind of product work I focus on.</p>
+        </div>
+
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="mobile">Mobile</button>
+          <button class="filter" data-filter="ml">AI &amp; ML</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="project reveal" data-category="web">
+            <div class="project-media grad-1">
+              <i class="bi bi-bank"></i>
+              <span class="project-cat">Full-Stack Web</span>
+            </div>
+            <div class="project-body">
+              <span class="project-date"><i class="bi bi-calendar3"></i> Sep — Oct 2023</span>
+              <h3>Banking Website Clone</h3>
+              <p>A React banking application clone backed by a Spring Boot and MySQL service layer — account views, transactions, and core banking flows.</p>
+              <div class="tags sm"><span>React</span><span>Spring Boot</span><span>MySQL</span></div>
+              <div class="project-links">
+                <a href="https://github.com/alexappu/Bankingapp_deploy/tree/master" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="mobile" data-reveal-delay="80">
+            <div class="project-media grad-2">
+              <i class="bi bi-book-half"></i>
+              <span class="project-cat">Mobile · AR</span>
+            </div>
+            <div class="project-body">
+              <span class="project-date"><i class="bi bi-calendar3"></i> Feb — May 2023</span>
+              <h3>AR Biblioteca</h3>
+              <p>A Flutter app using AR Core to locate books inside a library through augmented reality. Built at Saintgits College of Engineering.</p>
+              <div class="tags sm"><span>Flutter</span><span>AR Core</span><span>Dart</span></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="web ml" data-reveal-delay="160">
+            <div class="project-media grad-3">
+              <i class="bi bi-heart-pulse"></i>
+              <span class="project-cat">Web · Machine Learning</span>
+            </div>
+            <div class="project-body">
+              <span class="project-date"><i class="bi bi-calendar3"></i> Sep — Dec 2022</span>
+              <h3>MediXpert</h3>
+              <p>A web application applying machine learning to predict Congestive Heart Failure, with a Django backend and a Bootstrap interface.</p>
+              <div class="tags sm"><span>Django</span><span>Machine Learning</span><span>Python</span><span>Bootstrap</span></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="web">
+            <div class="project-media grad-4">
+              <i class="bi bi-patch-question"></i>
+              <span class="project-cat">Web App</span>
+            </div>
+            <div class="project-body">
+              <span class="project-date"><i class="bi bi-calendar3"></i> May — Jul 2022</span>
+              <h3>QuizPro — Online Quiz App</h3>
+              <p>An online quiz platform for attempting and creating quizzes, built with a responsive Bootstrap front end.</p>
+              <div class="tags sm"><span>Bootstrap</span><span>CSS</span><span>JavaScript</span><span>HTML</span></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="web" data-reveal-delay="80">
+            <div class="project-media grad-5">
+              <i class="bi bi-heart"></i>
+              <span class="project-cat">Web App</span>
+            </div>
+            <div class="project-body">
+              <span class="project-date"><i class="bi bi-calendar3"></i> Dec 2020 — Mar 2021</span>
+              <h3>Share Your Life</h3>
+              <p>An organ-donation web platform connecting donors and recipients, built with Bootstrap and a responsive, accessible interface.</p>
+              <div class="tags sm"><span>Bootstrap</span><span>CSS</span><span>HTML</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">06 — Contact</span>
+          <h2>Let's build something together</h2>
+          <p class="section-lead">Open to frontend roles, freelance projects, and product collaborations.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a class="info-row" href="mailto:alexjames2909@gmail.com">
+              <span class="info-icon"><i class="bi bi-envelope"></i></span>
+              <span><strong>Email</strong>alexjames2909@gmail.com</span>
+            </a>
+            <a class="info-row" href="tel:+917559829221">
+              <span class="info-icon"><i class="bi bi-telephone"></i></span>
+              <span><strong>Phone</strong>+91 75598 29221</span>
+            </a>
+            <div class="info-row">
+              <span class="info-icon"><i class="bi bi-geo-alt"></i></span>
+              <span><strong>Location</strong>Bengaluru, Karnataka, India</span>
+            </div>
+
+            <div class="collab">
+              <h4>How I work</h4>
               <ul>
-                <li><i class="bi bi-check2-circle"></i><span>Clean and maintainable frontend code</span></li>
-                <li><i class="bi bi-check2-circle"></i><span>Strong ownership from requirement to release</span></li>
-                <li><i class="bi bi-check2-circle"></i><span>Mobile-first, user-focused implementation</span></li>
-                <li><i class="bi bi-check2-circle"></i><span>Clear communication with product and QA teams</span></li>
+                <li><i class="bi bi-check2-circle"></i> Open to full-time &amp; freelance frontend roles</li>
+                <li><i class="bi bi-check2-circle"></i> Focused on React-based product development</li>
+                <li><i class="bi bi-check2-circle"></i> Usually responds within 24 hours</li>
+                <li><i class="bi bi-check2-circle"></i> Timezone: IST (GMT +5:30)</li>
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="resume" class="resume section-padding">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Experience & Education</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Experience</h3>
-            <div class="resume-item">
-              <h4>Software Engineer - Frontend</h4>
-              <h5>Nov 2023 - Present</h5>
-              <p><em>Enhancio Business Solutions</em></p>
-              <ul>
-                <li>Developed frontend modules for business applications using React and modern JavaScript.</li>
-                <li>Collaborated with backend and QA teams to deliver stable, high-quality releases.</li>
-                <li>Improved UI responsiveness and usability across desktop and mobile devices.</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Certifications</h3>
-            <div class="resume-item">
-              <h4>Advanced React</h4>
-              <h5>Jul 2024</h5>
-              <p><em>Meta</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>AWS S3 Basics</h4>
-              <h5>Jul 2024</h5>
-              <p><em>Coursera Project Network</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Google Data Analytics</h4>
-              <h5>2021 - 2022</h5>
-              <p><em>Google</em></p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Computer Applications (MCA)</h4>
-              <h5>2021 - 2023</h5>
-              <p><em>Saintgits College of Engineering, Kottayam</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Computer Applications (BCA)</h4>
-              <h5>2018 - 2021</h5>
-              <p><em>St. Thomas College, Konni</em></p>
-            </div>
-            <div class="resume-item">
-              <h4>Higher Secondary</h4>
-              <h5>2016 - 2018</h5>
-              <p><em>Mary Matha Public School & Junior College</em></p>
-            </div>
-
-            <h3 class="resume-title">Quick Details</h3>
-            <div class="resume-item pb-0">
-              <ul>
-                <li>Bengaluru, Karnataka, India</li>
-                <li>+91 7559829221</li>
-                <li>alexjames2909@gmail.com</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects section-padding section-bg">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Selected Work</h2>
-          <p>A snapshot of the type of product work I focus on.</p>
-        </div>
-
-        <div class="row g-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-md-6 col-xl-4">
-            <article class="project-card">
-              <h3>Business Dashboard UI</h3>
-              <p>Built reusable React components and data-driven charts for decision-making workflows.</p>
-              <span>React • TypeScript • APIs</span>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="project-card">
-              <h3>Service Booking Platform</h3>
-              <p>Implemented user flows, forms, and responsive interfaces to streamline bookings.</p>
-              <span>React • Bootstrap • Validation</span>
-            </article>
-          </div>
-          <div class="col-md-6 col-xl-4">
-            <article class="project-card">
-              <h3>Admin Operations Panel</h3>
-              <p>Created role-based screens and optimized page interactions for faster operations.</p>
-              <span>JavaScript • REST APIs • UX</span>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact section-padding">
-      <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p>Open to frontend opportunities, freelance projects, and product collaborations.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info w-100">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location</h4>
-                <p>Bengaluru, Karnataka, India</p>
+          <form class="contact-form reveal" data-reveal-delay="120"
+            action="https://api.web3forms.com/submit"
+            method="post">
+            <!-- Web3Forms: paste your free access key from https://web3forms.com below -->
+            <input type="hidden" name="access_key" value="7c2d8ee6-43fc-4821-80bc-e2bcc4195e5d">
+            <input type="hidden" name="from_name" value="Portfolio Contact Form">
+            <!-- Honeypot spam filter (must stay empty) -->
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your name" required>
               </div>
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email</h4>
-                <p>alexjames2909@gmail.com</p>
-              </div>
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Phone</h4>
-                <p>+91 7559829221</p>
-              </div>
-
-              <div class="collaboration-panel">
-                <h5>Collaboration Details</h5>
-                <ul>
-                  <li><strong>Availability:</strong> Open to full-time and freelance frontend roles</li>
-                  <li><strong>Preferred Work:</strong> React-based product development</li>
-                  <li><strong>Response Time:</strong> Usually within 24 hours</li>
-                  <li><strong>Timezone:</strong> IST (GMT +5:30)</li>
-                </ul>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="you@example.com" required>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="https://script.google.com/macros/s/AKfycbzdkXcAxKn8dvCQmb7Dlr6mwuwub1w-X9WGPZZbWZAvLGwroxh3Y7QhBjCVrkalkLdjNw/exec" method="post" role="form" class="w-100">
-              <div class="row">
-                <div class="form-group col-md-6 mb-3">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6 mb-3">
-                  <label for="email">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group mb-3">
-                <label for="subject">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group mb-4">
-                <label for="message">Message</label>
-                <textarea class="form-control" name="message" id="message" rows="7" required></textarea>
-              </div>
-              <div class="text-center text-lg-start"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" id="subject" placeholder="What's this about?" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="6" placeholder="Tell me about your project or role…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span class="btn-label"><i class="bi bi-send"></i> Send Message</span>
+            </button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer id="footer">
-    <div class="container">
-      <div class="credits">
-        © <span id="year">2026</span> Alex James. Crafted for a modern web presence.
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#hero" class="brand scrollto">
+        <span class="brand-mark">AJ</span>
+        <span class="brand-text">Alex James</span>
+      </a>
+      <p class="footer-copy">© <span id="year">2026</span> Alex James. Designed &amp; built for a modern web presence.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/alexjames2000/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/ALEX__JAMES006" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.instagram.com/njan_konnikaran/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
   </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <a href="#hero" class="back-to-top scrollto" aria-label="Back to top"><i class="bi bi-arrow-up"></i></a>
 
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
